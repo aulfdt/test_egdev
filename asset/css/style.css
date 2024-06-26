@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-upload{
+  width: 1000px;
+  border-radius: 15px;
+}
+
+.fz-12{
+  font-size: 12px;
+}
+
+.text-small{
+  font-size: 12px;
+  color: #656565;
+}
+
+.img-about{
+  margin-top: -50px;
+}
+
+.mt-10{
+  margin-top: 100px;
+}
+
+.bg-primary{
+  background-color: #252e64 !important;
+}
+
+.bg-secondary{
+  background-color: #252e64 !important;
+}
+
+.btn-warning{
+    background-color: #f49c4c;
+}
+
+.text-warning {
+    color: #f49c4c;
+}
+
+.fz-20{
+    font-size: 20px;
+  }
+
+.bg-warning{
+    background-color: #ff9500 !important;
+}
+
+.fz-25{
+    font-size: 25px;
+}
+
+.fz-15{
+    font-size: 15px;
+}
+
+.icon-footer {
+    width: 20px;
+    height: 20px;
+}
+
+.badge-footer {
+    padding: 2px 8px; /* Adjust padding for better spacing */
+}
+
+.badge-footer img {
+    margin-right: 5px; /* Space between the icon and text */
+}
+
+.d-flex.align-items-center .badge-footer small {
+    margin-bottom: 0; /* Remove bottom margin from small */
+    font-size: 12px; /* Smaller font size */
+}
+
+.d-flex.align-items-center .badge-footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: auto; /* Adjust height to fit content */
+}
