@@ -12,7 +12,13 @@
     <header>
         <nav class="navbar bg-body-tertiary">
             <div class="container">
-              <a class="navbar-brand">Turned In</a>
+                <div class="logo-navbar">
+                    <img src="https://turnedin.id/img/logo/1714118413316.png"
+                    alt="Logo"
+                    id="img-logo"
+                    class="my-auto">
+                    <h5 class="title">Turned In</h5>
+                  </div>
               <form class="d-flex">
                 <button class="btn btn-success btn-sm">Login</button>
               </form>
@@ -29,62 +35,61 @@
         <div class="container py-4">
             <!-- Card -->
             <div class="shadow p-3 mb-5 bg-body-tertiary rounded w-75 mx-auto">
-                <span clas="fw-bold">JASA PARAFRASE</span>
-                <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
-                    <div class="button-container">
-                        <button type="button" class="btn btn-danger btn-sm float-md-end mx-1">Hapus Semua</button>
-                        <button type="button" class="btn btn-primary btn-sm float-md-end mx-1">Unggah File</button>
-                    </div>
-                    <div class="container py-5">
-                        <div class="text-center text-secondary">
-                            <h3>Cek Turnitin No-Repository</h3>
-                            <span class="fw-semibold">TARIK FILE MU KESINI / KLIK AJA DISINI</span>
-                            <p>.docx .pdf aja yaa</p>
+                <span clas="fw-bold mb-5">JASA PARAFRASE</span>
+                <div class="row align-items-center justify-content-center">
+                    <div class="d-flex justify-content-around card-parafrase">
+                        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded card-upload">
+                            <div>
+                                <h5 class="text-secondary text-center"> Upload File Turnitin </h5>
+                                <p class="text-secondary text-center"> file pdf turnitin</p>
+                            </div>
+                        </div>
+                        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded card-upload">
+                            <div>
+                                <h5 class="text-secondary text-center"> Upload File Docx </h5>
+                                <p class="text-secondary text-center"> file docx</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
                     <!-- 1 -->
-                     <div class="px-4">
-                        <h6 class="fw-bold">1. Filter pilih aja sesuai kebutuhan</h6>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label text-secondary" for="'flexCheckChecked">
-                                Kecualikan Kutipan
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label text-secondary" for="'flexCheckChecked">
-                                Kecualikan Daftar Pustaka
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label text-secondary" for="'flexCheckChecked">
-                                Kecualikan sumber yang kurang dari ...
-                            </label>
+                    <div class="container mt-5 py-2 p-5">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-6 border-end">
+                                <h6 class="fw-bold">1. Isi info tambahannya yaa</h6>
+                                <div class="mb-3 py-2">
+                                    <label for="exampleFormControlInput1" class="form-label">Deadline</label>
+                                    <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mt-3">
+                                    <label class="text-dark">Mau nurunin berapa persen</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Contoh: 20" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <span class="input-group-text" id="basic-addon2">%</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <hr>
                     <!-- 2 -->
-                    <div class="px-4">
-                        <h6 class="fw-bold">2. Isi nomor Whatsapp kamu buat dikirim hasilnya</h6>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Nomor Whatsapp" aria-label="Nomor Whatsapp" aria-describedby="basic-addon1"> 
-                        </div>
-                        <div class="form-check align-items-center">
-                            <input class="form-check-input form-control" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Mau dapet info promo / update Turned In ga?
-                            </label>
-                        </div>
-                        <div>
-                        <span> Jumlah : Rp0</span>
-                        </div>
-                        <div>
-                            <label for="inputPassword5" class="form-label">Referral Code (Opsional)</label>
-                            <input type="password" id="inputPassword5" class="form-control" aria-describedby=""passwordHelpBlock>
+                    <div class="col-6 py-2 p-5">
+                        <h6 class="fw-bold">2. Isi Nomer Whatsapp kamu buat ngirim hasilnya</h6>
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto">
+                                <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png" width="20" height="20" alt="WhatsApp Logo">
+                            </div>
+                            <div class="col-auto">
+                                <input type="text" class="form-control" placeholder="62xxxxxxxxx">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Catatan</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Contoh: Kata-katanya yang nyambung ya"></textarea>
+                            </div>
+                            <div class="text-dark fw-bold">
+                                <span>Jumlah: Rp 0</span>
+                                <span class="badge text-bg-secondary">Tawar</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,6 +98,30 @@
                 </div>
             </div>
         </div>
+        <div class="w-100 bg-primary mt-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <img src="/asset/pegang-buku.png" alt="" class="img-fluid img-about">
+                </div>
+                <div class="col-8 mt-5">
+                  <div class="text-center fw-bold text-light">
+                    <span>Parafrase In itu apa sih?</span>
+                  </div>
+                  <div class="text-center text-light ">
+                    <p>Parafrase adalah kegiatan mengungkapkan ulang sebuah teks atau gagasan dengan menggunakan kata-kata yang berbeda namun tetap mempertahankan makna aslinya. Hal ini dilakukan untuk menjelaskan atau menggambarkan suatu konsep atau informasi secara lebih jelas atau dengan gaya yang berbeda.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-5">
+            <div class="text-center">
+                <h1 class="fw-bold fz-25">Biar apa pake Parafrase?</h1>
+                <p class="text-warning fw-bold fz-15">Biar plagiasi kalian turun dan nilaipun jadi bagus</p>
+            </div>
+          </div>
+    </main>
     <!-- Footer -->
     <footer class="w-100 bg-primary mt-5">
         <div class="container">
