@@ -1,9 +1,8 @@
-// Mengambil elemen DOM untuk area testimoni
 const testiArea = document.getElementById("testi-area");
 
 var data = [];
 
-// Mengambil data testimoni
+
 (() => {
     fetch("http://192.168.18.12:3000/testimoni", { 
         method: "GET"
@@ -35,12 +34,12 @@ var data = [];
     });
 })();
 
-// Mengambil elemen DOM untuk area produk
+
 const productArea = document.getElementById("product-area");
 
 var data_product = [];
 
-// Mengambil data produk
+
 (() => {
     fetch("http://192.168.18.12:3000/product", { 
         method: "GET"
@@ -74,3 +73,4 @@ var data_product = [];
         }
     });
 })();
+

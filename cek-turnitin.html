@@ -34,68 +34,81 @@
      <main>
         <div class="container py-4">
             <!-- Card -->
-            <div class="shadow p-3 mb-5 bg-body-tertiary rounded w-75 mx-auto">
-                <span clas="fw-semibold">CEK TURNITIN NO-REPOSITORY</span>
-                <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
-                    <div class="button-container">
-                        <button type="button" class="btn btn-danger btn-sm float-md-end mx-1">Hapus Semua</button>
-                        <button type="button" class="btn btn-primary btn-sm float-md-end mx-1">Unggah File</button>
-                    </div>
-                    <div class="container py-5">
-                        <div class="text-center text-secondary">
-                            <h3>Cek Turnitin No-Repository</h3>
-                            <span class="fw-semibold">TARIK FILE MU KESINI / KLIK AJA DISINI</span>
-                            <p>.docx .pdf aja yaa</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <!-- 1 -->
-                     <div class="px-4">
-                        <h6 class="fw-bold">1. Filter pilih aja sesuai kebutuhan</h6>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label text-secondary" for="'flexCheckChecked">
-                                Kecualikan Kutipan
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label text-secondary" for="'flexCheckChecked">
-                                Kecualikan Daftar Pustaka
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label text-secondary" for="'flexCheckChecked">
-                                Kecualikan sumber yang kurang dari ...
-                            </label>
-                        </div>
-                    </div>
-                    <hr>
-                    <!-- 2 -->
-                    <div class="px-4">
-                        <h6 class="fw-bold">2. Isi nomor Whatsapp kamu buat dikirim hasilnya</h6>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Nomor Whatsapp" aria-label="Nomor Whatsapp" aria-describedby="basic-addon1"> 
-                        </div>
-                        <div class="form-check align-items-center">
-                            <input class="form-check-input form-control" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Mau dapet info promo / update Turned In ga?
-                            </label>
-                        </div>
-                        <div>
-                        <span> Jumlah : Rp0</span>
-                        </div>
-                        <div>
-                            <label for="inputPassword5" class="form-label">Referral Code (Opsional)</label>
-                            <input type="password" id="inputPassword5" class="form-control" aria-describedby=""passwordHelpBlock>
-                        </div>
-                    </div>
+             <form>
+                 <div class="shadow p-3 mb-5 bg-body-tertiary rounded w-75 mx-auto">
+                     <span clas="fw-semibold">CEK TURNITIN NO-REPOSITORY</span>
+                     <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded" id="dropArea">
+                         <input 
+                         type="file"
+                         name="file"
+                         class="input-file"
+                         id="fileInput"
+                         />
+                         <div class="button-container">
+                             <button type="button" class="btn btn-danger btn-sm float-md-end mx-1">Hapus Semua</button>
+                             <button type="button" class="btn btn-primary btn-sm float-md-end mx-1">Unggah File</button>
+                         </div>
+                         <div class="container py-5">
+                             <div class="text-center text-secondary" id="fileList">
+                                 <h3>Cek Turnitin No-Repository</h3>
+                                 <span class="fw-semibold">TARIK FILE MU KESINI / KLIK AJA DISINI</span>
+                                 <p>.docx .pdf aja yaa</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="d-flex justify-content-center">
+                         <!-- 1 -->
+                          <div class="px-4">
+                             <h6 class="fw-bold">1. Filter pilih aja sesuai kebutuhan</h6>
+                             <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="" name="kutipan" checked>
+                                 <label class="form-check-label text-secondary" for="'flexCheckChecked">
+                                     Kecualikan Kutipan
+                                 </label>
+                             </div>
+                             <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="daftar-pustaka" checked>
+                                 <label class="form-check-label text-secondary" for="'flexCheckChecked">
+                                     Kecualikan Daftar Pustaka
+                                 </label>
+                             </div>
+                             <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="sumber" checked>
+                                 <label class="form-check-label text-secondary" for="'flexCheckChecked">
+                                     Kecualikan sumber yang kurang dari ...
+                                 </label>
+                             </div>
+                            </div>
+                            <hr>
+                            <!-- 2 -->
+                            <div class="col-6 py-2 p-5">
+                                <h6 class="fw-bold">2. Isi Nomer Whatsapp kamu buat ngirim hasilnya</h6>
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-auto">
+                                        <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png" width="20" height="20" alt="WhatsApp Logo">
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="text" class="form-control" placeholder="62xxxxxxxxx" name="WhatsApp">
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check text-secondary">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckPromo" name="promo">
+                                            <label class="form-check-label" for="flexCheckPromo">Mau dapet info promo / update Turned In ga?</label>
+                                            <div class="text-dark fw-bold py-2">
+                                                <span>Jumlah: Rp 0</span>
+                                            </div>
+                                            <div class="mb-3 text-dark fw-semi py-2">
+                                                <label for="referralCode" class="form-label">Referral Code (Opsional)</label>
+                                                <input type="text" class="form-control" id="referralCode" name="referral">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+             </form>
                 </div>
                 <div class="d-flex justify-content-center py-5">
-                  <button type="button" class="btn btn-warning text-light"> Ajukan </button>
+                  <button type="button" class="btn btn-warning text-light" onclick="cekTurnitin()"> Ajukan </button>
                 </div>
             </div>
         </div>
@@ -155,5 +168,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous">
    </script>
+   <!--Link JS-->
+   <script src="/asset/js/upload.js"></script>
+   <script src="/asset/js/cek-turnitin.js"></script>
 </body>
 </html>
