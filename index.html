@@ -10,155 +10,187 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container">
-              <div class="logo-navbar">
-                <img src="https://turnedin.id/img/logo/1714118413316.png"
-                alt="Logo"
-                id="img-logo"
-                class="my-auto">
-                <h5 class="title">Turned In</h5>
-              </div>
-              <form class="d-flex">
-                <button class="btn btn-success btn-sm">Login</button>
-              </form>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://turnedin.id/img/logo/1714118413316.png" alt="Logo">
+                <span class="title fw-bold">Turned In</span>
+            </a>
+            <div class="collapse navbar-collapse text-nav" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cek Pesanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cara Order</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
-          <div class="w-100 bg-warning py-3 mb-5">
+            <div class="form-inline">
+                <button class="btn btn-success btn-sm" type="button">Login</button>
+            </div>
+        </div>
+      </nav>
+      <!--End Navbar-->
+
+      <!--Banner-->
+        <div class="w-100 bg-warning py-3 mb-5">
             <div class="text-center text-light">
                 <span> Cek Turnitin 24 Jam </span>
             </div>
-          </div>
+        </div>
+        <!--End Banner-->
     </header>
-    <!-- Main Section-->
+    <!-- End Header -->
+
+    <!-- Main Section -->
     <main>
-      <div class="container">
-           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="/asset/carousel-1.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="/asset/crousel-2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/asset/carousel-3.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-    </div>
-    <div class="content">
-      <div class="container">
-        <!-- Product Section-->
-        <div class="row mt-5" id="product-area">
-        </div>
-        <!-- End Product Section-->
-      </div>
-      <!-- About Turnedin -->
-      <div class="w-100 bg-primary mt-5">
         <div class="container">
-          <div class="row">
-            <div class="col-4">
-              <img src="/asset/pegang-buku.png" alt="" class="img-fluid img-about">
-            </div>
-            <div class="col-8 mt-5">
-              <div class="text-center fw-bold text-light">
-                <span>Apa Itu Turnedin?</span>
-              </div>
-              <div class="text-center text-light">
-                <p class="text-light">Turnedin adalah layanan cek plagiasi otomatis berbasis turnitin PERTAMA di Indonesia!!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Testimoni -->
-      <div class="container mt-5">
-        <div class="text-center">
-          <h1 class="fw-bold mt-5 fz-25">Kata Mereka</h1>
-        </div>
-        <div class="row" id="testi-area">
-          
-        </div>
-      </div>
-      <div class="container mt-5">
-        <div class="text-center">
-          <h1 class="fw-bold mt-5 fz-25">Biar apa pake Turnedin?</h1>
-          <p class="fw-semibold text-warning">Biar apa pake Turnedin?</p>
-        </div>
-        <div class="row">
-          <div class="col"></div>
-        </div>
-      </div>
-      <div class="container mt-5">
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <div class="col">
-              <img src="https://turnedin.id/img/logo/1714118487566.png" alt="" class="img-fluid">
-              <h6 class="fw-bold mb-2">Kami ga libur demi kamu</h6>
-              <p class="text-center">Layanan ini buka 24 jam, kami siap layani kamu dimanapun kapanpun</p>
-            </div>
-            <div class="col">
-              <img src="https://turnedin.id/img/logo/1714118487567.png" alt="" class="img-fluid">
-              <h6 class="fw-bold mb-2">Cepet? Jelas udah otomatis kok</h6>
-              <p class="text-center">Layanan ini buka 24 jam, kami siap layani kamu dimanapun kapanpun</p>
-            </div>
-            <div class="col">
-              <img src="https://turnedin.id/img/logo/1714118487567.png" alt="" class="img-fluid">
-              <h6 class="fw-bold mb-2">Kalo ada yang tanya-tanya susah dong?</h6>
-              <p class="text-center">Layanan ini buka 24 jam, kami siap layani kamu dimanapun kapanpun</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>       
-    </main>
-    <!--End Main Section-->
-    
-    <!-- Footer -->
-    <footer class="w-100 bg-primary mb-4 mb-md-0">
-      <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
-                <div class="logo-footer">
-                  <img src="https://turnedin.id/img/logo/1714118413317.png"
-                  alt="Logo"
-                  id="img-logo"
-                  class="my-auto">
-                  <h5 class="title text-light">Turned In</h5>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="/asset/carousel-1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/asset/crousel-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/asset/carousel-3.png" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-              <div class="d-flex align-items-center">
-                  <div class="badge badge-footer text-bg-light me-2 d-flex align-items-center">
-                      <img src="https://turnedin.id/img/logo/whatsapp.png" class="img-fluid icon-footer me-1">
-                      <small class="mb-0">081234567890</small>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <!-- Product Section -->
+                    <div class="row mt-5" id="product-area">
+                        
+                    </div>
+                    <!-- End Product Section -->
+                </div>
+
+                <!-- About Turned In -->
+                <div class="w-100 bg-primary mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="/asset/pegang-buku.png" alt="" class="img-fluid img-about">
+                            </div>
+                            <div class="col-8 mt-5">
+                                <div class="text-center fw-bold text-light">
+                                    <span>Apa Itu Turned In?</span>
+                                </div>
+                                <div class="text-center text-light">
+                                    <p class="text-light">Turned In adalah layanan cek plagiasi otomatis berbasis turnitin PERTAMA di Indonesia!!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End About Turned In -->
+
+                <!-- Testimoni -->
+                <div class="container mt-5">
+                    <div class="text-center">
+                        <h1 class="fw-bold mt-5 fz-25">Kata Mereka</h1>
+                    </div>
+                    <div class="row" id="testi-area">
+                        
+                    </div>
+                </div>
+
+                <!-- Turned In Benefits -->
+                <div class="container mt-5 p-5">
+                  <div class="text-center">
+                      <h2 class="fw-bold mb-2 fz-25">Biar apa pake turned in?</h2>
+                      <h5 class="fw-bold mb-0 text-warning fz-15">Biar apa pake turned in?</h5>
                   </div>
-                  <div class="badge badge-footer text-bg-light me-2 d-flex align-items-center">
-                      <img src="https://turnedin.id/img/logo/ig.jpg" class="img-fluid icon-footer me-1">
-                      <small class="mb-0">Turnedin.id</small>
-                  </div>
-                  <div class="badge badge-footer text-bg-light d-flex align-items-center">
-                      <img src="https://turnedin.id/img/logo/tiktok.jpg" class="img-fluid icon-footer me-1">
-                      <small class="mb-0">Turnedin.id</small>
-                  </div>
+                </div>
+
+                <!-- Benefit Section -->
+                <div class="container mt-5 mb-5 p-5 justify-content-center">
+                    <div class="row">
+                        <div class="col-4 border-end">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="https://turnedin.id/img/logo/1714118487566.png" class="img-fluid">
+                                </div>
+                                <div class="col-8">
+                                    <span class="m-0 fw-bold">Kami gak libur demi kamu</span>
+                                    <p class="ms-0">Layanan Turned In buka 24 jam, kami siap layani kamu kapanpun dimanapun</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 border-end">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="https://turnedin.id/img/logo/1714118487567.png" class="img-fluid">
+                                </div>
+                                <div class="col-8">
+                                    <span class="m-0 fw-bold">Cepet? Jelas udah otomatis ko</span>
+                                    <p class="ms-0">Turned In gak bakal ketiduran kok :( udah full otomatis semuanyaaa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="https://turnedin.id/img/logo/1714118487567.png" class="img-fluid">
+                                </div>
+                                <div class="col-8">
+                                    <span class="m-0 fw-bold">Kalo ada tanya tanya susah dong?</span>
+                                    <p class="ms-0">Gak ygy, ada mimin yang siap jawab pertanyaan mu kok hehe !!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Benefit Section -->
+            </div>
+        </div>
+    </main>
+    <!-- End Main Section -->
+
+    <!-- Footer -->
+    <footer class="w-100 bg-primary mt-5">
+      <div class="container">
+          <div class="d-flex justify-content-between align-items-center py-3">
+              <div class="logo-footer">
+                  <img src="https://turnedin.id/img/logo/1714118413317.png" alt="Logo" id="img-logo" class="my-auto">
+                  <h5 class="title text-light fw bold">Turned In</h5>
               </div>
+              <div class="d-flex align-items-center">
+                <div class="badge badge-footer text-bg-light">
+                    <img src="https://turnedin.id/img/logo/whatsapp.png" class="img-fluid icon-footer">
+                    <small class="text-secondary fw-normal mb-0">6282116719760</small>
+                </div>
+                <div class="badge badge-footer text-bg-light">
+                    <img src="https://turnedin.id/img/logo/ig.jpg" class="img-fluid icon-footer">
+                    <small class="text-secondary fw-normal mb-0">turnedin.id</small>
+                </div>
+                <div class="badge badge-footer text-bg-light">
+                    <img src="https://turnedin.id/img/logo/tiktok.jpg" class="img-fluid icon-footer">
+                    <small class="text-secondary fw-normal mb-0">turnedin.id</small>
+                </div>
+            </div>
           </div>
       </div>
   </footer>
-  <!-- End Footer -->
+    <!-- End Footer -->
 
-     <!-- Bootstrap -->
-     <script 
-     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-     crossorigin="anonymous">
-    </script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- End Bootstrap -->
-     <!-- JS -->
+
+    <!-- JS -->
     <script src="/asset/js/main.js"></script>
     <!-- End JS -->
 </body>

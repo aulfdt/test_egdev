@@ -41,6 +41,10 @@
     background-color: #f49c4c;
 }
 
+.btn-yellow{
+    background-color: #f49c4c;
+}
+
 .text-warning {
     color: #f49c4c;
 }
@@ -61,29 +65,40 @@
     font-size: 15px;
 }
 
+.bg-primary {
+  background-color: #0d1b4c !important;
+}
+.logo-footer {
+  display: flex;
+  align-items: center;
+}
+.logo-footer img {
+  height: 40px; 
+}
+.logo-footer .title {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: #ffffff; 
+}
 .icon-footer {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
-
 .badge-footer {
-    padding: 2px 8px; /* Adjust padding for better spacing */
+  padding: 5px 10px; 
+  border-radius: 15px; 
+  background-color: #ffffff; 
+  display: flex;
+  align-items: center;
 }
-
 .badge-footer img {
-    margin-right: 5px; /* Space between the icon and text */
+  margin-right: 5px; 
 }
-
-.d-flex.align-items-center .badge-footer small {
-    margin-bottom: 0; /* Remove bottom margin from small */
-    font-size: 12px; /* Smaller font size */
+.badge-footer small {
+  font-size: 12px; 
 }
-
-.d-flex.align-items-center .badge-footer {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: auto; /* Adjust height to fit content */
+.badge-footer + .badge-footer {
+  margin-left: 10px; 
 }
 
 .card-login{
@@ -121,7 +136,7 @@
 .card-upload {
   flex: 1;
   margin: 0 100px;
-  padding: 40px; /* Mengurangi padding menjadi 40px untuk ukuran yang lebih moderat */
+  padding: 40px;
   background-color: #f8f9fa;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -129,18 +144,39 @@
   height: 50%;
 }
 
-.logo-navbar {
+.navbar-custom {
+  background-color: #f8f9fa; /* Adjust as needed */
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-brand {
   display: flex;
   align-items: center;
-  text-align: center;
 }
-.logo-navbar img {
-  width: 8%;
-  height: 8%;
-  margin-right: 1px;
+.navbar-brand img {
+  height: 30px;
+  max-width: 100px; 
 }
-.logo-navbar h5 {
-  margin: 0;
+.navbar-brand .title {
+  margin-left: 10px;
+  font-size: 1.2rem; 
+}
+.navbar-nav {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.nav-item + .nav-item {
+  margin-left: 20px;
+}
+.text-nav {
+  margin-right: 9%;
+}
+.form-inline {
+  margin-left: auto;
 }
 
 .logo-footer {
@@ -155,7 +191,98 @@
   margin-right: 1px;
 }
 
+.badge-footer{
+  width: max-content;
+  height: 30px;
+  }
+
 .input-file {
   visibility: hidden;
   position: absolute;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px; 
+}
+
+.search-bar {
+  width: 80%;
+}
+
+.select-bar {
+  width: 15%;
+}
+
+.btn-warning {
+  margin-left: auto;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.pagination {
+  margin: 0;
+}
+
+.icon-job {
+  width: 8%;
+  height: 8%;
+}
+
+.text-primary{
+  color: #252e64 !important;
+}
+
+
+
+.fst-normal{
+  font-size: small;
+}
+
+.mb-10{
+  margin-bottom: -5px;
+}
+
+.icon-text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.icon-text-wrapper img {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.icon-text-wrapper .text-content {
+  max-width: 200px;
+}
+
+.icon-text-wrapper h6 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.icon-text-wrapper p {
+  margin: 5px 0 0 0;
+  font-size: 0.875rem;
+}
+
+.custom-select {
+  width: 70%; /* Ukuran lebar 100% dari elemen induk */
+  padding: 5px; /* Padding untuk menambah tinggi elemen */
+  font-size: 1em; /* Ukuran font lebih besar */
 }

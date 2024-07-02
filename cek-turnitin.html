@@ -1,175 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/asset/css/style.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container">
-                <div class="logo-navbar">
-                    <img src="https://turnedin.id/img/logo/1714118413316.png"
-                    alt="Logo"
-                    id="img-logo"
-                    class="my-auto">
-                    <h5 class="title">Turned In</h5>
-                  </div>
-              <form class="d-flex">
-                <button class="btn btn-success btn-sm">Login</button>
-              </form>
+                <a class="navbar-brand" href="#">
+                    <img src="https://turnedin.id/img/logo/1714118413316.png" alt="Logo">
+                    <span class="title fw-bold">Turned In</span>
+                </a>
+                <div class="collapse navbar-collapse justify-content-center text-nav" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cek Pesanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cara Order</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-inline">
+                    <button class="btn btn-success btn-sm" type="button">Login</button>
+                </div>
             </div>
-          </nav>
-          <div class="w-100 bg-warning py-3">
-            <div class="text-center fw-semibold text-light">
-                <span> Cek Turnitin 24 Jam </span>
+        </nav>
+        <div class="w-100 bg-warning py-3 mb-5">
+            <div class="text-center text-light">
+                <span>Cek Turnitin 24 Jam</span>
             </div>
-          </div>
+        </div>
     </header>
+    <!-- End Header -->
+
     <!-- Main Section -->
-     <main>
+    <main>
         <div class="container py-4">
             <!-- Card -->
-             <form>
-                 <div class="shadow p-3 mb-5 bg-body-tertiary rounded w-75 mx-auto">
-                     <span clas="fw-semibold">CEK TURNITIN NO-REPOSITORY</span>
-                     <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded" id="dropArea">
-                         <input 
-                         type="file"
-                         name="file"
-                         class="input-file"
-                         id="fileInput"
-                         />
-                         <div class="button-container">
-                             <button type="button" class="btn btn-danger btn-sm float-md-end mx-1">Hapus Semua</button>
-                             <button type="button" class="btn btn-primary btn-sm float-md-end mx-1">Unggah File</button>
-                         </div>
-                         <div class="container py-5">
-                             <div class="text-center text-secondary" id="fileList">
-                                 <h3>Cek Turnitin No-Repository</h3>
-                                 <span class="fw-semibold">TARIK FILE MU KESINI / KLIK AJA DISINI</span>
-                                 <p>.docx .pdf aja yaa</p>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="d-flex justify-content-center">
-                         <!-- 1 -->
-                          <div class="px-4">
-                             <h6 class="fw-bold">1. Filter pilih aja sesuai kebutuhan</h6>
-                             <div class="form-check">
-                                 <input class="form-check-input" type="checkbox" value="" id="" name="kutipan" checked>
-                                 <label class="form-check-label text-secondary" for="'flexCheckChecked">
-                                     Kecualikan Kutipan
-                                 </label>
-                             </div>
-                             <div class="form-check">
-                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="daftar-pustaka" checked>
-                                 <label class="form-check-label text-secondary" for="'flexCheckChecked">
-                                     Kecualikan Daftar Pustaka
-                                 </label>
-                             </div>
-                             <div class="form-check">
-                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="sumber" checked>
-                                 <label class="form-check-label text-secondary" for="'flexCheckChecked">
-                                     Kecualikan sumber yang kurang dari ...
-                                 </label>
-                             </div>
+            <form>
+                <div class="shadow p-3 mb-5 bg-body-tertiary rounded w-75 mx-auto">
+                    <span class="fw-bold">CEK TURNITIN NO-REPOSITORY</span>
+                    <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded" id="dropArea">
+                        <input type="file" name="file" class="input-file" id="fileInput" />
+                        <div class="button-container">
+                            <button type="button" class="btn btn-danger btn-sm float-md-end mx-1">Hapus Semua</button>
+                            <button type="button" class="btn btn-primary btn-sm float-md-end mx-1">Unggah File</button>
+                        </div>
+                        <div class="container py-5">
+                            <div class="text-center text-secondary" id="fileList">
+                                <h3>Cek Turnitin No-Repository</h3>
+                                <span class="fw-semibold">TARIK FILE MU KESINI / KLIK AJA DISINI</span>
+                                <p>.docx .pdf aja yaa</p>
                             </div>
-                            <hr>
-                            <!-- 2 -->
-                            <div class="col-6 py-2 p-5">
-                                <h6 class="fw-bold">2. Isi Nomer Whatsapp kamu buat ngirim hasilnya</h6>
-                                <div class="row g-3 align-items-center">
-                                    <div class="col-auto">
-                                        <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png" width="20" height="20" alt="WhatsApp Logo">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="container mt-0 py-2 p-5">
+                            <div class="row">
+                                <div class="col-6 border-end fw-bold">
+                                    <span>1. Filter pilih sesuai kebutuhan yaa</span>
+                                    <div class="form-check fw-normal text-secondary">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"
+                                            name="kutipan">
+                                        <label class="form-check-label" for="flexCheckDefault1">Kecualikan Kutipan</label>
                                     </div>
-                                    <div class="col-auto">
-                                        <input type="text" class="form-control" placeholder="62xxxxxxxxx" name="WhatsApp">
+                                    <div class="form-check fw-normal text-secondary">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2"
+                                            name="daftar-pustaka">
+                                        <label class="form-check-label" for="flexCheckDefault2">Kecualikan Daftar
+                                            Pustaka</label>
                                     </div>
-                                    <div class="col-auto">
-                                        <div class="form-check text-secondary">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckPromo" name="promo">
-                                            <label class="form-check-label" for="flexCheckPromo">Mau dapet info promo / update Turned In ga?</label>
-                                            <div class="text-dark fw-bold py-2">
-                                                <span>Jumlah: Rp 0</span>
-                                            </div>
-                                            <div class="mb-3 text-dark fw-semi py-2">
-                                                <label for="referralCode" class="form-label">Referral Code (Opsional)</label>
-                                                <input type="text" class="form-control" id="referralCode" name="referral">
+                                    <div class="form-check fw-normal text-secondary">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3"
+                                            name="sumber">
+                                        <label class="form-check-label" for="flexCheckDefault3">Kecualikan Sumber yang
+                                            kurang dari</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 py-2 p-5 mb-4">
+                                    <span class="fw-bold">2. Isi Nomer Whatsapp kamu buat ngirim hasilnya</span>
+                                    <div class="row g-3 align-items-center">
+                                        <div class="col-auto">
+                                            <img src="https://www.techspot.com/images2/downloads/topdownload/2016/05/WhatsApp_Logo_1.png"
+                                                width="20" height="20" alt="WhatsApp Logo">
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="text" class="form-control" placeholder="62xxxxxxxxx"
+                                                name="WhatsApp">
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="form-check text-secondary">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckPromo" name="promo">
+                                                <label class="form-check-label" for="flexCheckPromo">Mau dapet info
+                                                    promo / update Turned In ga?</label>
+                                                <div class="text-dark fw-bold py-2">
+                                                    <span>Jumlah: Rp 0</span>
+                                                </div>
+                                                <div class="mb-3 text-dark fw-semi py-2">
+                                                    <label for="referralCode" class="form-label">Referral Code
+                                                        (Opsional)</label>
+                                                    <input type="text" class="form-control" id="referralCode"
+                                                        name="referral">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-             </form>
-                </div>
-                <div class="d-flex justify-content-center py-5">
-                  <button type="button" class="btn btn-warning text-light" onclick="cekTurnitin()"> Ajukan </button>
-                </div>
-            </div>
+                            <div class="d-flex justify-content-center py-5">
+                                <a type="button" class="btn btn-yellow text-light"onclick="cekTurnitin()">Ajukan</a>
+                            </div>
+                        </div>
+            </form>
+        </div>
+        </div>
         </div>
         <!-- About -->
         <div class="w-100 bg-primary mt-5">
             <div class="container">
-              <div class="row">
-                <div class="col-4">
-                  <img src="/asset/pegang-buku.png" alt="" class="img-fluid img-about">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="/asset/pegang-buku.png" alt="" class="img-fluid img-about">
+                    </div>
+                    <div class="col-8 mt-5">
+                        <div class="text-center fw-bold text-light">
+                            <span>Cek Plagiasi Turnitin itu apa sih?</span>
+                        </div>
+                        <div class="text-center text-light">
+                            <p>Turnedin adalah layanan cek plagiasi otomatis yang terintegrasi langsung dengan Turnitin
+                                sehuingga bisa mendeteksi tingkat plagiasi pada dokumen kamu</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-8 mt-5">
-                  <div class="text-center fw-bold text-light">
-                    <span>Cek Plagiasi Turnitin itu apa sih?</span>
-                  </div>
-                  <div class="text-center text-light ">
-                    <p>Turnedin adalah layanan cek plagiasi otomatis yang terintegrasi langsung dengan Turnitin sehuingga bisa mendeteksi tingkat plagiasi pada dokumen kamu</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="container mt-5">
+        </div>
+        <div class="container mt-5">
             <div class="text-center">
                 <h1 class="fw-bold fz-25">Emang kenapa harus Turned In?</h1>
                 <p class="text-warning fw-bold fz-15">Harus dong, ga usah ditanya</p>
             </div>
-          </div>
-        <!--End About-->
-     </main>
-     <!-- Footer -->
-     <footer class="w-100 bg-primary mt-5">
-      <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
-              <div>
-                  <h1 class="text-light">Turnedin</h1>
-              </div>
-              <div class="d-flex align-items-center">
-                  <div class="badge badge-footer text-bg-light me-2 d-flex align-items-center">
-                      <img src="https://turnedin.id/img/logo/whatsapp.png" class="img-fluid icon-footer me-1">
-                      <small class="mb-0">081234567890</small>
-                  </div>
-                  <div class="badge badge-footer text-bg-light me-2 d-flex align-items-center">
-                      <img src="https://turnedin.id/img/logo/ig.jpg" class="img-fluid icon-footer me-1">
-                      <small class="mb-0">Turnedin.id</small>
-                  </div>
-                  <div class="badge badge-footer text-bg-light d-flex align-items-center">
-                      <img src="https://turnedin.id/img/logo/tiktok.jpg" class="img-fluid icon-footer me-1">
-                      <small class="mb-0">Turnedin.id</small>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
-  
+        </div>
+        <!-- End About -->
+    </main>
+    <!-- Footer -->
+    <footer class="w-100 bg-primary mt-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="logo-footer">
+                    <img src="https://turnedin.id/img/logo/1714118413317.png" alt="Logo" id="img-logo" class="my-auto">
+                    <h5 class="title text-light fw-bold">Turned In</h5>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="badge badge-footer text-bg-light">
+                        <img src="https://turnedin.id/img/logo/whatsapp.png" class="img-fluid icon-footer">
+                        <small class="text-secondary fw-normal mb-0">6282116719760</small>
+                    </div>
+                    <div class="badge badge-footer text-bg-light">
+                        <img src="https://turnedin.id/img/logo/ig.jpg" class="img-fluid icon-footer">
+                        <small class="text-secondary fw-normal mb-0">turnedin.id</small>
+                    </div>
+                    <div class="badge badge-footer text-bg-light">
+                        <img src="https://turnedin.id/img/logo/tiktok.jpg" class="img-fluid icon-footer">
+                        <small class="text-secondary fw-normal mb-0">turnedin.id</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-    crossorigin="anonymous">
-   </script>
-   <!--Link JS-->
-   <script src="/asset/js/upload.js"></script>
-   <script src="/asset/js/cek-turnitin.js"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Yvpcr
