@@ -282,7 +282,39 @@
 }
 
 .custom-select {
-  width: 70%; /* Ukuran lebar 100% dari elemen induk */
-  padding: 5px; /* Padding untuk menambah tinggi elemen */
-  font-size: 1em; /* Ukuran font lebih besar */
+  width: 70%;
+  padding: 5px; 
+  font-size: 1em; 
 }
+
+.large-spacing {
+  padding-top: 50px; 
+  padding-bottom: 50px;
+}
+
+/*Media Querries*/
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1024px){
+  .responsive-img{
+    max-width: 90%;
+  }
+}
+
+/*Media Querries*/
+/*Mobile*/
+@media (min-width: 300px) and (max-width: 767px){
+  .responsive-img{
+    max-width: 100%;
+  }
+  .container-custom{
+    padding: 0px 0px;
+  }
+  .card-upload{
+    width: 100% !important;
+  }
+  .border-between{
+    border-right: none;
+    border-bottom: 1px solid rgb(177, 175, 175);
+  }
+}
+
