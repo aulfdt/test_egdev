@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../../partials/head.ejs") %>
+<body>
+    <!-- Header -->
+    <%- include("../../partials/header.ejs") %>
+      <!--End Navbar-->
+
+      <!--Banner-->
+        <div class="w-100 bg-warning py-3 mb-5">
+            <div class="text-center text-light">
+                <span> Cek Turnitin 24 Jam </span>
+            </div>
+        </div>
+    <!--End Banner-->
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Section -->
+    <main>
+        <div class="container">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="/assets/img/carousel-1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/assets/img/crousel-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/carousel-3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <!-- Product Section -->
+                    <div class="row mt-5" id="product-area">
+                        
+                    </div>
+                    <!-- End Product Section -->
+                </div>
+
+            </div>
+        </div>
+        <!-- About Turned In -->
+        <div class="w-100 bg-primary mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="/assets/img/pegang-buku.png" alt="" class="img-fluid img-about">
+                    </div>
+                    <div class="col-8 mt-5">
+                        <div class="text-center fz-25 fw-bold text-light">
+                            <span>Apa Itu Turned In?</span>
+                        </div>
+                        <div class="text-center fw-semibold fz-15 text-light">
+                            <p class="text-light">Turned In adalah layanan cek plagiasi otomatis berbasis turnitin PERTAMA di Indonesia!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About Turned In -->
+
+        <!-- Testimoni -->
+        <div class="container mt-5">
+            <div class="text-center">
+                <h1 class="fw-bold mt-5 fz-25">Kata Mereka</h1>
+            </div>
+            <div class="row" id="testi-area">
+                
+            </div>
+        </div>
+
+        <!-- Turned In Benefits -->
+        <div class="container mt-5 p-5 large-spacing">
+          <div class="text-center">
+              <h2 class="fw-bold mb-2 fz-25">Biar apa pake turned in?</h2>
+              <h5 class="fw-bold mb-0 text-warning fz-15">Biar apa pake turned in?</h5>
+          </div>
+        </div>
+
+        <!-- Benefit Section -->
+        <div class="container mt-5 mb-5 p-5 justify-content-center">
+            <div class="row">
+                <div class="col-4 border-end">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="https://turnedin.id/img/logo/1714118487566.png" class="img-fluid">
+                        </div>
+                        <div class="col-8">
+                            <span class="m-0 fw-bold">Kami gak libur demi kamu</span>
+                            <p class="ms-0">Layanan Turned In buka 24 jam, kami siap layani kamu kapanpun dimanapun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 border-end">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="https://turnedin.id/img/logo/1714118487567.png" class="img-fluid">
+                        </div>
+                        <div class="col-8">
+                            <span class="m-0 fw-bold">Cepet? Jelas udah otomatis ko</span>
+                            <p class="ms-0">Turned In gak bakal ketiduran kok :( udah full otomatis semuanyaaa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="https://turnedin.id/img/logo/1714118487567.png" class="img-fluid">
+                        </div>
+                        <div class="col-8">
+                            <span class="m-0 fw-bold">Kalo ada tanya tanya susah dong?</span>
+                            <p class="ms-0">Gak ygy, ada mimin yang siap jawab pertanyaan mu kok hehe !!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Benefit Section -->
+        </main>
+    <!-- End Main Section -->
+
+    <!-- Footer -->
+    <%- include("../../partials/footer.ejs") %>
+    <!-- End Footer -->
+
+    <!-- Bootstrap -->
+
+    <!-- End Bootstrap -->
+
+    <!-- Include script.ejs -->
+    <%- include("../../partials/script.ejs") %>
+    <!-- End JS -->
+</body>
+</html>
